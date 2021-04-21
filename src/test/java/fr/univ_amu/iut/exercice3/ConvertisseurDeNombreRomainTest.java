@@ -60,6 +60,13 @@ public class ConvertisseurDeNombreRomainTest {
 
     @Disabled
     @Test
+    public void leChiffreRomainIIIIDevraitDonnerUneException() {
+        assertThrows(IllegalArgumentException.class,
+                () ->convertisseurDeNombreRomain.enNombreArabe("IIII"));
+    }
+
+    @Disabled
+    @Test
     public void leChiffreRomainXXXDevraitDonner30() {
         int nombre = convertisseurDeNombreRomain.enNombreArabe("XXX");
         assertEquals(30, nombre);
