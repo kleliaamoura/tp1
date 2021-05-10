@@ -18,10 +18,27 @@ public class Robot {
         return orientation;
     }
 
-    public void turnRight()
+    public void turnRight() {
+        if(this.orientation == Orientation.NORTH)
+            this.orientation = Orientation.EAST;
+        else if(this.orientation == Orientation.EAST)
+            this.orientation = Orientation.SOUTH;
+        else if(this.orientation == Orientation.SOUTH)
+            this.orientation = Orientation.WEST;
+        else if(this.orientation == Orientation.WEST)
+            this.orientation = Orientation.NORTH;
+    }
+
 
     public void turnLeft() {
-        throw new RuntimeException("Not yet implemented !");
+        if(this.orientation == Orientation.NORTH)
+            this.orientation = Orientation.WEST;
+        else if(this.orientation == Orientation.WEST)
+            this.orientation = Orientation.SOUTH;
+        else if(this.orientation == Orientation.SOUTH)
+            this.orientation = Orientation.EAST;
+        else if(this.orientation == Orientation.EAST)
+            this.orientation = Orientation.NORTH;
     }
 
     public void advance() {
