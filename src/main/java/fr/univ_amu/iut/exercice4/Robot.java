@@ -7,7 +7,7 @@ public class Robot {
 
     public Robot(GridPosition gridPosition, Orientation orientation) {
         this.gridPosition = gridPosition;
-        this.orientation = Orientation;
+        this.orientation = orientation;
     }
 
     public GridPosition getGridPosition() {
@@ -18,9 +18,7 @@ public class Robot {
         return orientation;
     }
 
-    public void turnRight() {
-        throw new RuntimeException("Not yet implemented !");
-    }
+    public void turnRight()
 
     public void turnLeft() {
         throw new RuntimeException("Not yet implemented !");
