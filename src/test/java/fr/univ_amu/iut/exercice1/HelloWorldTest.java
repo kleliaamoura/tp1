@@ -13,19 +13,19 @@ public class HelloWorldTest {
         assertEquals("Hello, World!", HelloWorld.hello(new String()));
     }
 
-    @Disabled
+   @Disabled
     @Test
     public void test_hello_with_no_name_should_return_helloworld() {
         assertEquals("Hello, World!", HelloWorld.hello(null));
     }
    
-    @Disabled
+   @Disabled
     @Test
     public void test_hello_should_return_hello_alice_when_alice() {
         assertEquals("Hello, Alice!", HelloWorld.hello("Alice"));
     }
 
-    @Disabled
+   @Disabled
     @Test
     public void test_hello_should_return_hello_bob_when_bob() {
         assertEquals("Hello, Bob!", HelloWorld.hello("Bob"));

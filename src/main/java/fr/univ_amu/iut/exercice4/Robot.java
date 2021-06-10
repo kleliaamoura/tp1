@@ -45,7 +45,7 @@ public class Robot {
         if(this.orientation == Orientation.NORTH)
             this.gridPosition.setY(this.gridPosition.getY() + 1);
         else if(this.orientation == Orientation.SOUTH)
-            this.gridPosition.setY(this.gridPosition.getY() - 1);K
+            this.gridPosition.setY(this.gridPosition.getY() - 1);
         else if (this.orientation == Orientation.EAST)
             this.gridPosition.setX(this.gridPosition.getX() + 1);
         else if (this.orientation == Orientation.WEST)
